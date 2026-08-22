@@ -1,0 +1,27 @@
+{
+  "name": "@net.webax/memory-core",
+  "version": "0.2.0",
+  "description": "WebAX unified storage abstraction layer.",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch",
+    "test": "node cicda/tests/smoke.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
